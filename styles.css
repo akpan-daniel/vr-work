@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    width: 189px;
+    height: 73px;
+    position: relative;
+    bottom: 10;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    margin: auto;
+    width: 85%;
+    height: 15vh;
+    align-items: center;
+
+}
+
+header{
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.178);
+}
+
+.nav{
+    display: flex;
+    margin-left: 20px;
+}
+
+.list-item{
+    list-style-type: none;
+}
+
+.link-list-item{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 70px;
+    color: black;
+}
+
+.main-container{
+    margin: auto;
+    width: 100%;
+}
+
+.countdown{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 30px;
+    width: 85%;
+    margin: auto;
+}
+
+.container{
+    text-align: center;
+    font-size: 40px;
+}
+
+.countdown h3 {
+    text-transform: uppercase;
+}
+
+
+/* CAROSEL COMPONENT START */
+
+.hero-img{
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(img/vr-kit.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-img::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.747);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 0;
+}
+
+.hero-img > *{
+    z-index: 10; 
+    position: relative;
+}
+
+.hero-content{
+    display: block;
+    margin-top: 200px;
+    margin-left: 90px;
+    color: white;
+}
+
+.hero-content p{
+    width: 50%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.hero-content h3{
+    font-size: 50px;
+    margin-bottom: 20px; 
+}
+
+.hero-content button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    width: 150px;
+    height: 47px;
+    cursor: pointer;
+}
+
+/* CAROSEL COMPONENT START */
+
+.about-cards{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    border-radius: 5px;
+    width: 25%;
+    margin-left: 20px;
+    padding: 30px 40px 30px 40px;
+    box-shadow: 5px 10px 15px -8px rgba(0, 0, 0, 0.363);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #1c1e21;
+    color: white;
+}
+
+.card p{
+    line-height: 1.3;
+    font-size:17px;
+    font-weight: 550;
+}
+
+.card h3{
+    margin-bottom: 10px;
+}
+
+.product-overview h1{
+    text-align: center;
+    font-size: 45px;
+    /* text-transform: uppercase; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product-overview{
+    margin-bottom: 90px;
+}
+
+.prod1{
+    background-image: url(img/kit1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    height: 60vh;
+    align-items: center;
+    margin: auto;
+}
+
+.prod1::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.658);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 0;
+}
+
+.prod1 > *{
+    z-index: 10; 
+    position: relative;
+}
+
+.prod{
+    margin-left: 10px;
+}
+
+.prod-sec-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.prod2{
+    background-image: url(img/headset2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 30%;
+    height: 50vh;
+}
+
+.prod2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.658);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 0;
+}
+
+.prod2 > *{
+    z-index: 10; 
+    position: relative;
+}
+
+.prod3{
+    background-image: url(img/dock.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    width: 30%;
+    height: 50vh;
+}
+
+.prod3::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.658);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 0;
+}
+
+.prod3 > *{
+    z-index: 10; 
+    position: relative;
+}
+
+.prod4{
+    background-image: url(img/chord2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    width: 30%;
+    height: 50vh;
+}
+
+.prod4::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.658);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 0;
+}
+
+.prod4 > *{
+    z-index: 10; 
+    position: relative;
+}
+
+.btn{
+    text-align: center;
+}
+
+.prod-btn{
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 170px;
+    height: 47px;
+    cursor: pointer;
+}
+
+.prod1 h3{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px; 
+}
+
+.prod1 p{
+    color: white;
+    width: 50%;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.prod1-content{
+    display: block;
+    margin-top: 70px;
+    margin-left: 90px;
+    color: white;
+}
+
+.prod1 button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 170px;
+    height: 47px;
+    cursor: pointer;
+}
+
+.prod2 h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
+.prod2 p{
+    color: white;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.prod2-content{
+    display: block;
+    margin-top: 70px;
+    margin-left: 40px;
+    color: white;
+}
+
+.line{
+    border-top: 2px solid white;
+    color: white;
+    font-weight: 700;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .prod2 button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 170px;
+    height: 47px;
+    cursor: pointer;
+} */
+/* PROD 3 CONTENT STYLE START*/
+.prod3 h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
+.prod3 p{
+    color: white;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.prod3-content{
+    display: block;
+    margin-top: 70px;
+    margin-left: 40px;
+    color: white;
+}
+/* PROD 3 CONTENT STYLE STOP*/
+
+/* PROD 4 CONTENT STYLE START*/
+.prod4 h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
+.prod4 p{
+    color: white;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.prod4-content{
+    display: block;
+    margin-top: 70px;
+    margin-left: 40px;
+    color: white;
+}
+/* PROD 4 CONTENT STYLE STOP*/
+
+.contact{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.contact-content{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.contact-deets{
+    text-align: center;
+    width: 33.333%;
+}
+
+.contact-deets h2{
+    
+    margin-top: 10px;
+    color: #1c1e21;
+}
+
+.contact-deets h3{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.icon{
+    text-align: center;
+    font-size: 35px;
+}
+
+.icon-bg{
+    margin-left: 195px;
+    width: 55px;
+    border-radius: 100%;
+    padding: 8px;
+    border: 2px dotted #3c3e41;
+}
+
+footer{
+   background-color: #1c1e21;
+   color: white;
+}
+
+.first-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px 0 0px;
+    margin: 0 100px 30px 80px;
+}
+
+.first-footer h1{
+    font-size: 35px;
+}
+
+.update{
+    width: 50%;
+    margin-top: 13px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.39);
+}
+
+.main-footer{
+    padding: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.425);
+    font-weight: 100;
+    background-color: #181a1b;
+    font-size: 15px;
+}
